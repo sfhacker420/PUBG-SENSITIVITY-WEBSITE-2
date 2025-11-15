@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUBG Sensitivity Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <img src="logo.png" alt="Your Logo" class="logo" />
+  <h1>BR MASOOM PUBG Sensitivity Finder</h1>
+  <p>AI-powered sensitivity setup for Gyro & Non-Gyro</p>
+</header>
+
+<section id="chat-section">
+  <h2>Ask AI Assistant</h2>
+  <div id="chat-box"></div>
+  <div class="chat-input">
+    <input id="userMessage" type="text" placeholder="Ask about any device sensitivity..." />
+    <button id="sendBtn">Send</button>
+  </div>
+</section>
+
+  <main>
+    <input id="searchBox" type="text" placeholder="Search your device..." />
+    <ul id="suggestions"></ul>
+
+    <div id="result" class="card hidden">
+      <h2 id="deviceName"></h2>
+      <p><strong>Gyroscope:</strong> <span id="gyro"></span></p>
+      <p><strong>Non-Gyro:</strong> <span id="nongyro"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 PUBG Sensitivity Finder | Made with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
