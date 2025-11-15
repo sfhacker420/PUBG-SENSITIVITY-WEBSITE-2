@@ -1,40 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PUBG Sensitivity Finder</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BR MASOOM — PUBG Sensitivity Finder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-  <img src="logo.png" alt="Your Logo" class="logo" />
-  <h1>BR MASOOM PUBG Sensitivity Finder</h1>
-  <p>AI-powered sensitivity setup for Gyro & Non-Gyro</p>
-</header>
-
-<section id="chat-section">
-  <h2>Ask AI Assistant</h2>
-  <div id="chat-box"></div>
-  <div class="chat-input">
-    <input id="userMessage" type="text" placeholder="Ask about any device sensitivity..." />
-    <button id="sendBtn">Send</button>
-  </div>
-</section>
-
-  <main>
-    <input id="searchBox" type="text" placeholder="Search your device..." />
-    <ul id="suggestions"></ul>
-
-    <div id="result" class="card hidden">
-      <h2 id="deviceName"></h2>
-      <p><strong>Gyroscope:</strong> <span id="gyro"></span></p>
-      <p><strong>Non-Gyro:</strong> <span id="nongyro"></span></p>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="BR MASOOM logo" class="logo" />
+      <div>
+        <h1>BR MASOOM</h1>
+        <p class="tag">PUBG Sensitivity Finder — Gyro & Non-Gyro</p>
+      </div>
     </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <input id="searchBox" type="text" placeholder="Search your device (e.g. iPhone 13, Redmi Note 12)" autocomplete="off" />
+      <ul id="suggestions" class="suggestions"></ul>
+
+      <div id="result" class="card hidden">
+        <h2 id="deviceName"></h2>
+        <p><strong>Gyroscope:</strong> <span id="gyro"></span></p>
+        <p><strong>Non-Gyro:</strong> <span id="nongyro"></span></p>
+        <button id="copyBtn">Copy Settings</button>
+      </div>
+    </section>
+
+    <section id="chat-section" class="card chat-card">
+      <h2>AI Assistant — Ask BR MASOOM</h2>
+      <div id="chat-box" class="chat-box"></div>
+      <div class="chat-input">
+        <input id="userMessage" type="text" placeholder="Ask about sensitivities, devices or tips..." />
+        <button id="sendBtn">Send</button>
+      </div>
+      <p class="note">Note: To enable AI replies replace the OPENAI_API_KEY placeholder inside <code>script.js</code>. See README for security tips.</p>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 PUBG Sensitivity Finder | Made with ❤️</p>
+  <footer class="site-footer">
+    <p>© BR MASOOM — PUBG Sensitivity Finder</p>
   </footer>
 
   <script src="script.js"></script>
